@@ -1,0 +1,313 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.container-fluid-title {
+  padding: 3% 15% 8%;
+}
+
+.container-fluid-features {
+  padding: 3% 15%;
+}
+
+.container-fluid-testimonials {
+  padding: 3% 15%;
+}
+
+.container-fluid-pricing {
+  padding: 3% 15%;
+}
+
+
+#title {
+  background: #ff4c68;
+}
+
+
+/****** Navigation bar ******/
+
+.navbar {
+  margin-bottom: 100px;
+}
+
+.tindog-brand {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.nav-link {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-left: 50px;
+}
+
+
+
+/****** Title ******/
+
+.h1-box {
+  transform: translateY(15%);
+  padding-bottom: 50px;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.button-download {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.parent-to-image {
+  position: relative;
+}
+
+.iphone-image {
+  width: 40%;
+  transform: rotate(20deg);
+  position: absolute;
+  right: 30%;
+}
+
+
+/****** Features ******/
+
+#features {
+  text-align: center;
+  padding: 5%;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.features-icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+  transition: color 0.4s;
+}
+
+.features-icon:hover {
+  color: #ff4c68;
+}
+
+.features-h3 {
+  font-weight: 700;
+}
+
+.features-p {
+  color: #8f8f8f;
+  font-size: 1.2rem;
+}
+
+
+/****** Testimonials ******/
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #ffffff;
+  transition: height 0.5s;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.testimonials-photo {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+
+/****** Press ******/
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+}
+
+.press-logo {
+  width: 15%;
+  padding-bottom: 3%;
+  margin: 20px;
+  filter: brightness(0) invert(1);
+}
+
+
+
+/****** Pricing ******/
+
+
+#pricing {
+  text-align: center;
+  padding: 0 15% 5%;
+}
+
+.pricing-title {
+  margin: 5%;
+}
+
+.card-column {
+  margin: 4%;
+}
+
+
+
+/****** Call To Action ******/
+
+#cta {
+  padding: 5% 15%;
+  background: #ff4c68;
+  text-align: center;
+}
+
+.h3-cta {
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+
+/****** Fotter ******/
+
+#footer {
+  text-align: center;
+  margin: 5%;
+}
+
+.footer-icons-set {
+  margin: 20px;
+}
+
+.footer-icon {
+  margin: 20px;
+}
+
+.footer-p {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: #8f8f8f;
+}
+
+
+
+/****** Media queries ******/
+
+
+@media (max-width: 2100px){
+  .iphone-image {
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .h1-box {
+    transform: translateY(0%);
+  }
+}
+
+
+@media (max-width: 1700px){
+  .iphone-image {
+    width: 55%;
+    right: 20%;
+  }
+}
+
+
+@media (max-width: 1500px){
+  .iphone-image {
+    width: 60%;
+  }
+}
+
+
+@media (max-width: 1300px){
+  .iphone-image {
+    width: 65%;
+  }
+}
+
+
+@media (max-width: 1200px){
+
+  #title {
+    text-align: center;
+  }
+
+  .iphone-image {
+  width: 60%;
+  transform: rotate(0deg);
+  position: static;
+  }
+
+  h1 {
+    font-size: 3.7rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .h1-box {
+    transform: translateY(10%);
+  }
+
+  .container-fluid-title {
+    padding: 3% 10% 8%;
+  }
+
+  .container-fluid-features {
+    padding: 3% 10%;
+  }
+}
+
+@media (max-width: 1100px){
+  .navbar {
+    margin-bottom: 30px;
+  }
+
+  .iphone-image {
+    transform: translateY(10%);
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+
+@media (max-width: 992px){
+
+  .iphone-image {
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transform: none;
+  }
+
+  .container-fluid-title {
+      padding: 8% 7% 8%;
+    }
+
+  .container-fluid-features {
+      padding: 3% 15%;
+      }
+
+  .pricing-title {
+    margin-top: 8%;
+  }
+
+  .nav-link {
+    margin-left: 0;
+  }
+}
