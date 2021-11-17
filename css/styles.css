@@ -2,25 +2,20 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
-.container-fluid-title {
+
+/****** GLobal styling ******/
+
+
+.padding-5-15 {
+  padding: 5% 15%;
+}
+
+.padding-3-15-8 {
   padding: 3% 15% 8%;
 }
 
-.container-fluid-features {
-  padding: 3% 15%;
-}
-
-.container-fluid-testimonials {
-  padding: 3% 15%;
-}
-
-.container-fluid-pricing {
-  padding: 3% 15%;
-}
-
-
-#title {
-  background: #ff4c68;
+.button-download {
+  margin-right: 30px;
 }
 
 
@@ -46,22 +41,20 @@ body {
 
 /****** Title ******/
 
+#title {
+  background: #ff4c68;
+}
+
 .h1-box {
   transform: translateY(15%);
   padding-bottom: 50px;
 }
 
 h1 {
-  font-family: Montserrat, sans-serif;
   font-weight: 900;
   font-size: 4rem;
   line-height: 1.5;
   color: #ffffff;
-  margin-bottom: 30px;
-}
-
-.button-download {
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
@@ -81,7 +74,6 @@ h1 {
 
 #features {
   text-align: center;
-  padding: 5%;
   position: relative;
   background-color: #ffffff;
 }
@@ -96,17 +88,19 @@ h1 {
   color: #ff4c68;
 }
 
-.features-h3 {
+#features h3 {
   font-weight: 700;
 }
 
-.features-p {
+#features p {
   color: #8f8f8f;
   font-size: 1.2rem;
 }
 
 
 /****** Testimonials ******/
+
+
 #testimonials {
   text-align: center;
   background-color: #ef8172;
@@ -119,7 +113,7 @@ h2 {
   font-size: 3rem;
 }
 
-.testimonials-photo {
+#testimonials img {
   width: 10%;
   border-radius: 100%;
   margin: 20px;
@@ -133,7 +127,7 @@ h2 {
   text-align: center;
 }
 
-.press-logo {
+#press img {
   width: 15%;
   padding-bottom: 3%;
   margin: 20px;
@@ -147,11 +141,10 @@ h2 {
 
 #pricing {
   text-align: center;
-  padding: 0 15% 5%;
 }
 
-.pricing-title {
-  margin: 5%;
+.pricing-title-box {
+  margin-bottom: 5%;
 }
 
 .card-column {
@@ -163,13 +156,11 @@ h2 {
 /****** Call To Action ******/
 
 #cta {
-  padding: 5% 15%;
   background: #ff4c68;
   text-align: center;
 }
 
-.h3-cta {
-  font-family: Montserrat, sans-serif;
+#cta h3 {
   font-weight: 900;
   font-size: 3.5rem;
   color: #fff;
@@ -192,7 +183,7 @@ h2 {
   margin: 20px;
 }
 
-.footer-p {
+#footer p {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   color: #8f8f8f;
@@ -228,6 +219,14 @@ h2 {
   .iphone-image {
     width: 60%;
   }
+
+  .padding-3-15-8 {
+    padding: 8% 10% 8%;
+  }
+
+  .padding-5-15 {
+    padding: 8% 10%;
+  }
 }
 
 
@@ -235,10 +234,22 @@ h2 {
   .iphone-image {
     width: 65%;
   }
+
+  .padding-3-15-8 {
+    padding: 5% 5% 8%;
+  }
+
+  .padding-5-15 {
+    padding: 8% 5%;
+  }
 }
 
 
 @media (max-width: 1200px){
+
+  .navbar {
+    margin-bottom: 50px;
+  }
 
   #title {
     text-align: center;
@@ -259,15 +270,7 @@ h2 {
   }
 
   .h1-box {
-    transform: translateY(10%);
-  }
-
-  .container-fluid-title {
-    padding: 3% 10% 8%;
-  }
-
-  .container-fluid-features {
-    padding: 3% 10%;
+    transform: translateY(20%);
   }
 }
 
@@ -276,38 +279,61 @@ h2 {
     margin-bottom: 30px;
   }
 
-  .iphone-image {
-    transform: translateY(10%);
-  }
-
   h2 {
     font-size: 2rem;
   }
 }
 
+@media (max-width: 1060px){
+  .h1-box {
+    transform: translateY(10%);
+  }
+}
+
+
 
 @media (max-width: 992px){
 
+  h1 {
+    font-size: 6rem;
+  }
+
+  .tindog-brand {
+    font-size: 4rem;
+  }
+
+  .nav-link {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+  }
+
+  .button-download {
+    transform: scale(2);
+    margin: 100px;
+  }
+
   .iphone-image {
-    width: 50%;
+    width: 60%;
     padding-top: 50px;
     padding-bottom: 50px;
     transform: none;
   }
 
-  .container-fluid-title {
+  .feature {
+    margin: 8% auto;
+    transform: scale(1.4);
+  }
+
+/*  .padding-3-15-8 {
       padding: 8% 7% 8%;
     }
 
-  .container-fluid-features {
+  .padding-5-15 {
       padding: 3% 15%;
-      }
+  }*/
 
-  .pricing-title {
-    margin-top: 8%;
-  }
+   .pricing-title {
+     margin-top: 8%;
+   }
 
-  .nav-link {
-    margin-left: 0;
-  }
 }
