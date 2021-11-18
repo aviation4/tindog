@@ -131,6 +131,10 @@ h1 {
   background-color: #ef8172;
 }
 
+#press .section-padding {
+  padding: 0 15% 5%;
+}
+
 #press img {
   width: 70%;
   filter: brightness(0) invert(1);
