@@ -177,7 +177,7 @@ h1 {
 }
 
 
-/****** Fotter ******/
+/****** Footer ******/
 
 .footer-icons-set {
   margin: 20px;
@@ -189,7 +189,7 @@ h1 {
 
 
 
-/****** Media queries ******/
+/****** Media Queries ******/
 
 @media (max-width: 2100px) {
   .iphone-image {
