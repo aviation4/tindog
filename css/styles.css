@@ -30,6 +30,11 @@ p {
   background: #ff4c68;
 }
 
+#title ::selection {
+  background: #fff;
+  color: #ff4c68;
+}
+
 
 
 /****** Navigation bar ******/
@@ -88,6 +93,11 @@ h1 {
   background-color: #ffffff;
 }
 
+#features ::selection {
+  background: #ef8172;
+  color: #fff;
+}
+
 .features-icon {
   color: #ef8172;
   margin-bottom: 1rem;
@@ -110,6 +120,11 @@ h1 {
   background-color: #ef8172;
   color: #ffffff;
   transition: height 0.5s;
+}
+
+#testimonials ::selection {
+  background: #fff;
+  color: #ef8172;
 }
 
 #testimonials h2 {
@@ -148,6 +163,11 @@ h1 {
 
 /****** Pricing ******/
 
+#pricing ::selection {
+  background: #000;
+  color: #fff;
+}
+
 #pricing h2 {
   font-weight: 700;
   font-size: 3rem;
@@ -169,6 +189,11 @@ h1 {
   background: #ff4c68;
 }
 
+#cta ::selection {
+  background: #fff;
+  color: #ff4c68;
+}
+
 #cta h2 {
   font-weight: 900;
   font-size: 3.5rem;
@@ -182,6 +207,11 @@ h1 {
 
 
 /****** Footer ******/
+
+#footer ::selection{
+  background: #000;
+  color: #fff;
+}
 
 .footer-icons-set {
   margin: 20px;
