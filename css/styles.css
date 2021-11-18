@@ -1,16 +1,20 @@
+/****** Global styling ******/
+
 body {
   font-family: Montserrat, sans-serif;
+  text-align: center;
 }
 
+p {
+  color: #8f8f8f;
+  font-size: 1.2rem;
+}
 
-/****** GLobal styling ******/
-
-
-.padding-5-15 {
+.section-padding {
   padding: 5% 15%;
 }
 
-.padding-3-15-8 {
+.title-padding {
   padding: 3% 15% 8%;
 }
 
@@ -19,13 +23,14 @@ body {
 }
 
 
+
 /****** Navigation bar ******/
 
 .navbar {
   margin-bottom: 100px;
 }
 
-.tindog-brand {
+.company-brand {
   font-family: Ubuntu, sans-serif;
   font-weight: 500;
   font-size: 2.5rem;
@@ -48,6 +53,7 @@ body {
 .h1-box {
   transform: translateY(15%);
   padding-bottom: 50px;
+  text-align: left;
 }
 
 h1 {
@@ -70,10 +76,10 @@ h1 {
 }
 
 
+
 /****** Features ******/
 
 #features {
-  text-align: center;
   position: relative;
   background-color: #ffffff;
 }
@@ -92,23 +98,14 @@ h1 {
   font-weight: 700;
 }
 
-#features p {
-  color: #8f8f8f;
-  font-size: 1.2rem;
-}
-
-
 /****** Testimonials ******/
-
-
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
   color: #ffffff;
   transition: height 0.5s;
 }
 
-h2 {
+#testimonials h2 {
   font-weight: 700;
   font-size: 3rem;
 }
@@ -120,27 +117,31 @@ h2 {
 }
 
 
+
 /****** Press ******/
 
 #press {
   background-color: #ef8172;
-  text-align: center;
 }
 
 #press img {
-  width: 15%;
-  padding-bottom: 3%;
-  margin: 20px;
+  width: 70%;
   filter: brightness(0) invert(1);
+}
+
+#press .row {
+  align-items: center;
 }
 
 
 
 /****** Pricing ******/
 
+#pricing {}
 
-#pricing {
-  text-align: center;
+#pricing h2 {
+  font-weight: 700;
+  font-size: 3rem;
 }
 
 .pricing-title-box {
@@ -157,10 +158,9 @@ h2 {
 
 #cta {
   background: #ff4c68;
-  text-align: center;
 }
 
-#cta h3 {
+#cta h2 {
   font-weight: 900;
   font-size: 3.5rem;
   color: #fff;
@@ -168,12 +168,8 @@ h2 {
 }
 
 
-/****** Fotter ******/
 
-#footer {
-  text-align: center;
-  margin: 5%;
-}
+/****** Fotter ******/
 
 .footer-icons-set {
   margin: 20px;
@@ -183,18 +179,11 @@ h2 {
   margin: 20px;
 }
 
-#footer p {
-  font-family: Montserrat, sans-serif;
-  font-weight: 400;
-  color: #8f8f8f;
-}
-
 
 
 /****** Media queries ******/
 
-
-@media (max-width: 2100px){
+@media (max-width: 2100px) {
   .iphone-image {
     width: 50%;
     padding-top: 50px;
@@ -206,59 +195,50 @@ h2 {
   }
 }
 
-
-@media (max-width: 1700px){
+@media (max-width: 1700px) {
   .iphone-image {
     width: 55%;
     right: 20%;
   }
 }
 
-
-@media (max-width: 1500px){
+@media (max-width: 1500px) {
   .iphone-image {
     width: 60%;
   }
 
-  .padding-3-15-8 {
+  .title-padding {
     padding: 8% 10% 8%;
   }
 
-  .padding-5-15 {
+  .section-padding {
     padding: 8% 10%;
   }
 }
 
-
-@media (max-width: 1300px){
+@media (max-width: 1300px) {
   .iphone-image {
     width: 65%;
   }
 
-  .padding-3-15-8 {
+  .title-padding {
     padding: 5% 5% 8%;
   }
 
-  .padding-5-15 {
+  .section-padding {
     padding: 8% 5%;
   }
 }
 
-
-@media (max-width: 1200px){
-
+@media (max-width: 1200px) {
   .navbar {
     margin-bottom: 50px;
   }
 
-  #title {
-    text-align: center;
-  }
-
   .iphone-image {
-  width: 60%;
-  transform: rotate(0deg);
-  position: static;
+    width: 60%;
+    transform: rotate(0deg);
+    position: static;
   }
 
   h1 {
@@ -271,10 +251,11 @@ h2 {
 
   .h1-box {
     transform: translateY(20%);
+    text-align: center;
   }
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
   .navbar {
     margin-bottom: 30px;
   }
@@ -284,21 +265,18 @@ h2 {
   }
 }
 
-@media (max-width: 1060px){
+@media (max-width: 1060px) {
   .h1-box {
     transform: translateY(10%);
   }
 }
 
-
-
-@media (max-width: 992px){
-
+@media (max-width: 992px) {
   h1 {
     font-size: 6rem;
   }
 
-  .tindog-brand {
+  .company-brand {
     font-size: 4rem;
   }
 
@@ -314,7 +292,7 @@ h2 {
 
   .iphone-image {
     width: 60%;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
     transform: none;
   }
@@ -324,16 +302,24 @@ h2 {
     transform: scale(1.4);
   }
 
-/*  .padding-3-15-8 {
-      padding: 8% 7% 8%;
-    }
+  #testimonials img {
+    width: 20%;
+    margin: 40px;
+  }
 
-  .padding-5-15 {
-      padding: 3% 15%;
-  }*/
+  #testimonials em {
+    font-size: 1.6rem;
+  }
 
-   .pricing-title {
-     margin-top: 8%;
-   }
+  #press .section-padding {
+    padding: 5% 5% 2%;
+  }
 
+  #press img {
+    margin-bottom: 100px;
+  }
+
+  .pricing-title {
+    margin-top: 8%;
+  }
 }
