@@ -24,6 +24,14 @@ p {
 
 
 
+/******* Title *******/
+
+#title {
+  background: #ff4c68;
+}
+
+
+
 /****** Navigation bar ******/
 
 .navbar {
@@ -44,11 +52,7 @@ p {
 
 
 
-/****** Title ******/
-
-#title {
-  background: #ff4c68;
-}
+/****** Header ******/
 
 .h1-box {
   transform: translateY(15%);
@@ -64,7 +68,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-.parent-to-image {
+.iphone-div {
   position: relative;
 }
 
@@ -98,7 +102,10 @@ h1 {
   font-weight: 700;
 }
 
+
+
 /****** Testimonials ******/
+
 #testimonials {
   background-color: #ef8172;
   color: #ffffff;
@@ -137,8 +144,6 @@ h1 {
 
 /****** Pricing ******/
 
-#pricing {}
-
 #pricing h2 {
   font-weight: 700;
   font-size: 3rem;
@@ -167,6 +172,9 @@ h1 {
   margin-bottom: 4rem;
 }
 
+#cta .row {
+  align-items: flex-end;
+}
 
 
 /****** Fotter ******/
@@ -273,7 +281,11 @@ h1 {
 
 @media (max-width: 992px) {
   h1 {
-    font-size: 6rem;
+    font-size: 6.5rem;
+  }
+
+  p {
+    font-size: 1.6rem;
   }
 
   .company-brand {
@@ -281,7 +293,7 @@ h1 {
   }
 
   .nav-link {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-left: 2rem;
   }
 
@@ -298,8 +310,16 @@ h1 {
   }
 
   .feature {
-    margin: 8% auto;
+    margin: 8% 0;
+  }
+
+  .features-icon {
     transform: scale(1.4);
+    margin-bottom: 2rem;
+  }
+
+  .feature h3 {
+    font-size: 2.5rem;
   }
 
   #testimonials img {
@@ -319,7 +339,20 @@ h1 {
     margin-bottom: 100px;
   }
 
-  .pricing-title {
-    margin-top: 8%;
+  #pricing h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+
+  #pricing h3 {
+    font-size: 2.5rem;
+  }
+
+  #pricing span {
+    font-size: 2rem;
+  }
+
+  .benefits {
+    margin: 30px auto;
   }
 }
